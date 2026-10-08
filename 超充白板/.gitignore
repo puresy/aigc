@@ -5,6 +5,7 @@
 !代码工程/demos/
 代码工程/demos/*
 !代码工程/demos/chaochong/
+!代码工程/demos/keyframes/
 # 音频中间文件可由 工具/tts.py 从 raw/*.mp3 重新生成
 音频/*.wav
 音频/raw/*.wav
