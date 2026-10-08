@@ -1,0 +1,7 @@
+{"grammar":"t1_3b1b","duration":7,"cues":[
+ {"at":0,"kind":"title","text":"补能是短板效应"},
+ {"at":1.2,"kind":"equation","data":{"tokens":[{"s":"补能速度","zh":true},{"s":"=","gap":20},{"s":"min","gap":10},{"s":"(车, 桩, 站, 网, 人)","zh":true,"col":"YELLOW"}]}},
+ {"at":3.0,"kind":"point","text":"老车型吃不满功率"},
+ {"at":4.0,"kind":"point","text":"多车同充，功率被摊薄"},
+ {"at":5.0,"kind":"point","text":"电网容量撑不住"},
+ {"at":6.0,"kind":"highlight","data":{"target":"equation"}}]}

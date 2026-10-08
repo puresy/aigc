@@ -1,0 +1,49 @@
+{
+ "grammar": "y4_storytime",
+ "duration": 12.582,
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "safe": {
+  "bottom": 190
+ },
+ "data": {
+  "scene": "charge"
+ },
+ "cues": [
+  {
+   "at": 0.45,
+   "kind": "point",
+   "text": "即使你是近两年支持各种超充的新车",
+   "sub": "我的车支持超充！",
+   "data": {
+    "pose": "point"
+   }
+  },
+  {
+   "at": 4.189,
+   "kind": "react",
+   "dur": 1.46
+  },
+  {
+   "at": 5.711,
+   "kind": "point",
+   "text": "这不是续航长短和新款老款的问题",
+   "sub": "不是续航和新老款的问题",
+   "data": {
+    "pose": "shrug"
+   }
+  },
+  {
+   "at": 9.45,
+   "kind": "insert",
+   "sub": "导航到最近的超充站",
+   "text": "一辆一辆来",
+   "data": {
+    "hit": 11.7,
+    "app": "导航",
+    "mode": "queue"
+   }
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "grammar": "y5_kinetic_type",
+ "duration": 12.641,
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "safe": {
+  "bottom": 190
+ },
+ "data": {
+  "palette": [
+   [
+    "#14213D",
+    "#FFD23F"
+   ],
+   [
+    "#FF5A36",
+    "#FFFFFF"
+   ],
+   [
+    "#F4EFE6",
+    "#111111"
+   ],
+   [
+    "#FFD23F",
+    "#111111"
+   ]
+  ]
+ },
+ "cues": [
+  {
+   "at": 0.2,
+   "kind": "title",
+   "text": "超充功率",
+   "sub": "今年卷到了新境界",
+   "data": {
+    "key": "新境界"
+   }
+  },
+  {
+   "at": 4.189,
+   "kind": "title",
+   "text": "国庆·高速",
+   "sub": "真上了高速之后",
+   "data": {
+    "key": "高速"
+   }
+  },
+  {
+   "at": 6.267,
+   "kind": "title",
+   "text": "差别？",
+   "sub": "你感受到了吗",
+   "data": {
+    "key": "感受"
+   }
+  },
+  {
+   "at": 8.134,
+   "kind": "title",
+   "text": "还要多久？",
+   "sub": "超充才能真正改变局面",
+   "data": {
+    "key": "改变局面"
+   }
+  },
+  {
+   "at": 10.261,
+   "kind": "highlight",
+   "data": {
+    "word": "多久"
+   }
+  }
+ ]
+}

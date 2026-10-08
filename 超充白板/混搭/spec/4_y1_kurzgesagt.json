@@ -1,0 +1,103 @@
+{
+ "grammar": "y1_kurzgesagt",
+ "duration": 11.525,
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "safe": {
+  "bottom": 190
+ },
+ "data": {
+  "center": "高峰补能",
+  "flow": true,
+  "place": [
+   [
+    -600,
+    20
+   ],
+   [
+    -380,
+    -220
+   ],
+   [
+    0,
+    -330
+   ],
+   [
+    380,
+    -220
+   ],
+   [
+    600,
+    20
+   ]
+  ]
+ },
+ "cues": [
+  {
+   "at": 0.1,
+   "kind": "title",
+   "text": "五个环节，都可能是短板"
+  },
+  {
+   "at": 0.4,
+   "kind": "point",
+   "text": "车"
+  },
+  {
+   "at": 0.52,
+   "kind": "point",
+   "text": "桩"
+  },
+  {
+   "at": 0.64,
+   "kind": "point",
+   "text": "站"
+  },
+  {
+   "at": 0.76,
+   "kind": "point",
+   "text": "网"
+  },
+  {
+   "at": 0.88,
+   "kind": "point",
+   "text": "人"
+  },
+  {
+   "at": 1.65,
+   "kind": "highlight",
+   "data": {
+    "index": 0
+   }
+  },
+  {
+   "at": 2.864,
+   "kind": "highlight",
+   "data": {
+    "index": 1
+   }
+  },
+  {
+   "at": 4.917,
+   "kind": "highlight",
+   "data": {
+    "index": 2
+   }
+  },
+  {
+   "at": 7.367,
+   "kind": "highlight",
+   "data": {
+    "index": 3
+   }
+  },
+  {
+   "at": 9.312,
+   "kind": "highlight",
+   "data": {
+    "index": 4
+   }
+  }
+ ]
+}

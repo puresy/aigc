@@ -1,0 +1,69 @@
+{
+ "grammar": "t3_finance_chart",
+ "duration": 8.329,
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "safe": {
+  "bottom": 190
+ },
+ "data": {
+  "title": "今年国庆假期：新能源车流量峰值",
+  "unit": "新能源车数量，相对日常的倍数",
+  "chart": "bar",
+  "decimals": 1,
+  "suffix": " 倍",
+  "colors": {
+   "main": "#1f6fb2",
+   "accent": "#ff7a1a"
+  },
+  "series": [
+   {
+    "label": "日常",
+    "value": 1
+   },
+   {
+    "label": "国庆峰值",
+    "value": 1.8
+   }
+  ],
+  "xAxis": "category"
+ },
+ "cues": [
+  {
+   "at": 0.55,
+   "kind": "title"
+  },
+  {
+   "at": 1.55,
+   "kind": "bar",
+   "data": {
+    "index": 0
+   }
+  },
+  {
+   "at": 5.683,
+   "kind": "number",
+   "text": "国庆峰值新能源车",
+   "data": {
+    "value": 1780,
+    "suffix": " 万辆"
+   }
+  },
+  {
+   "at": 6.709,
+   "kind": "bar",
+   "data": {
+    "index": 1
+   }
+  },
+  {
+   "at": 7.959,
+   "kind": "highlight",
+   "data": {
+    "index": 1
+   },
+   "text": "是日常的"
+  }
+ ]
+}

@@ -8,3 +8,18 @@
 # 音频中间文件可由 工具/tts.py 从 raw/*.mp3 重新生成
 音频/*.wav
 音频/raw/*.wav
+# 本片改过的两个参数化片段语法（y1 加 place/ringOffset，y4 加充电场景与排队插入镜头）要提交
+!代码工程/clips/
+代码工程/clips/*
+!代码工程/clips/y1_kurzgesagt.js
+!代码工程/clips/y4_storytime.js
+# 混搭版中间产物
+混搭/片段/
+混搭/静帧/
+混搭/检查/
+混搭/fonts/
+混搭/拼接.mp4
+混搭/concat.txt
+混搭/*.jpg
+风格样张/*/
+!风格样张/spec/

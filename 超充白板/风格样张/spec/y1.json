@@ -1,0 +1,5 @@
+{"grammar":"y1_kurzgesagt","duration":7,"data":{"center":"高峰补能"},"cues":[
+ {"at":0,"kind":"title","text":"补能是短板效应"},
+ {"at":1.0,"kind":"point","text":"车"},{"at":1.5,"kind":"point","text":"桩"},{"at":2.0,"kind":"point","text":"站"},
+ {"at":2.5,"kind":"point","text":"网"},{"at":3.0,"kind":"point","text":"人"},
+ {"at":4.2,"kind":"highlight","data":{"index":3}}]}

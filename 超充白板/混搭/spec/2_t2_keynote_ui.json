@@ -1,0 +1,96 @@
+{
+ "grammar": "t2_keynote_ui",
+ "duration": 22.664,
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "safe": {
+  "bottom": 190
+ },
+ "data": {
+  "eyebrow": "2026 超充 · 第一批",
+  "title": "兆瓦级超充站",
+  "subtitle": "已经发布，并开始落地",
+  "accent": "#ff7a1a"
+ },
+ "cues": [
+  {
+   "at": 0.55,
+   "kind": "title"
+  },
+  {
+   "at": 6.876,
+   "kind": "number",
+   "text": "比亚迪单桩功率 · 站点破万",
+   "data": {
+    "value": 1500,
+    "suffix": " kW",
+    "label": "比亚迪"
+   }
+  },
+  {
+   "at": 8.284,
+   "kind": "card",
+   "text": "吉利 · 小鹏",
+   "sub": "也在规划落地",
+   "data": {
+    "icon": "clock"
+   }
+  },
+  {
+   "at": 10.718,
+   "kind": "card",
+   "text": "蔚来 × 吉利",
+   "sub": "补能网络互通",
+   "data": {
+    "icon": "layers"
+   }
+  },
+  {
+   "at": 12.633,
+   "kind": "card",
+   "text": "换电 + 超充",
+   "sub": "同步加入",
+   "data": {
+    "icon": "bolt"
+   }
+  },
+  {
+   "at": 16.428,
+   "kind": "number",
+   "text": "第二批 · 也来到 500 千瓦以上",
+   "data": {
+    "value": 500,
+    "suffix": " kW+",
+    "label": "第二批"
+   }
+  },
+  {
+   "at": 17.999,
+   "kind": "card",
+   "text": "华为",
+   "sub": "500–600 kW",
+   "data": {
+    "icon": "bolt"
+   }
+  },
+  {
+   "at": 18.599,
+   "kind": "card",
+   "text": "理想",
+   "sub": "500–600 kW",
+   "data": {
+    "icon": "bolt"
+   }
+  },
+  {
+   "at": 19.199,
+   "kind": "card",
+   "text": "特斯拉",
+   "sub": "500–600 kW",
+   "data": {
+    "icon": "bolt"
+   }
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "grammar": "t2_keynote_ui",
+ "duration": 15.153,
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "safe": {
+  "bottom": 190
+ },
+ "data": {
+  "eyebrow": "展望",
+  "title": "理想化的情况",
+  "subtitle": "几年后，会是什么样",
+  "accent": "#2bb673"
+ },
+ "cues": [
+  {
+   "at": 0.55,
+   "kind": "title"
+  },
+  {
+   "at": 2.447,
+   "kind": "card",
+   "text": "超充车型普及",
+   "sub": "几年后成为主流",
+   "data": {
+    "icon": "check"
+   }
+  },
+  {
+   "at": 4.942,
+   "kind": "card",
+   "text": "流转速度 ≈ 加油站",
+   "sub": "快进快出",
+   "data": {
+    "icon": "clock"
+   }
+  },
+  {
+   "at": 7.637,
+   "kind": "card",
+   "text": "高峰时间",
+   "sub": "单车占用压下来",
+   "data": {
+    "icon": "chart"
+   }
+  },
+  {
+   "at": 10.624,
+   "kind": "number",
+   "text": "高峰单车占用",
+   "data": {
+    "value": 10,
+    "suffix": " 分钟",
+    "label": "压到"
+   }
+  },
+  {
+   "at": 12.224,
+   "kind": "number",
+   "text": "高峰单车占用",
+   "data": {
+    "value": 5,
+    "suffix": " 分钟",
+    "label": "甚至"
+   }
+  },
+  {
+   "at": 12.904,
+   "kind": "card",
+   "text": "电站储能",
+   "sub": "把电先存在站里",
+   "data": {
+    "icon": "layers"
+   }
+  },
+  {
+   "at": 13.904,
+   "kind": "card",
+   "text": "电网压力",
+   "sub": "由储能来扛",
+   "data": {
+    "icon": "bolt"
+   }
+  }
+ ]
+}

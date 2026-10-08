@@ -1,0 +1,5 @@
+{"grammar":"t2_keynote_ui","duration":7,"data":{"eyebrow":"2026 超充","title":"功率卷到新境界","subtitle":"两批超充，两个量级","accent":"#ff7a1a"},"cues":[
+ {"at":0,"kind":"title"},
+ {"at":2.0,"kind":"card","text":"第一批 · 兆瓦级","sub":"比亚迪 1500kW，站点破万","data":{"icon":"bolt"}},
+ {"at":2.8,"kind":"card","text":"互通 + 换电","sub":"蔚来与吉利，换电超充同步","data":{"icon":"layers"}},
+ {"at":3.6,"kind":"card","text":"第二批 · 500kW+","sub":"华为 理想 特斯拉 500–600kW","data":{"icon":"chart"}}]}

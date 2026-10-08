@@ -1,0 +1,4 @@
+{"grammar":"y5_kinetic_type","duration":6,"cues":[
+ {"at":0,"kind":"title","text":"国庆流量峰值","sub":"新能源车数量","data":{"key":"新能源车"}},
+ {"at":2.6,"kind":"number","sub":"新能源车数量","data":{"value":1780,"suffix":" 万辆","label":"国庆峰值"}},
+ {"at":4.6,"kind":"point","text":"×1.8","sub":"是日常的 1.8 倍","data":{"key":"1.8 倍"}}]}

@@ -1,0 +1,4 @@
+{"grammar":"y4_storytime","duration":7,"cues":[
+ {"at":0.1,"kind":"point","text":"新车支持超充，国庆上了高速，","sub":"我车支持超充！"},
+ {"at":2.0,"kind":"insert","sub":"导航：附近超充站","text":"排队 12 辆","data":{"hit":3.4,"app":"导航"}},
+ {"at":4.6,"kind":"react"}]}
