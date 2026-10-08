@@ -91,6 +91,16 @@
    "data": {
     "icon": "bolt"
    }
+  },
+  {
+   "at": 20.899,
+   "kind": "number",
+   "text": "华为 · 理想 · 特斯拉",
+   "data": {
+    "value": 600,
+    "suffix": " kW",
+    "label": "最高到"
+   }
   }
  ]
 }

@@ -39,6 +39,7 @@ def seg2(t0):   # G 发布会：两批超充
         {'at': r(S(12) + 0.3), 'kind': 'card', 'text': '华为', 'sub': '500–600 kW', 'data': {'icon': 'bolt'}},
         {'at': r(S(12) + 0.9), 'kind': 'card', 'text': '理想', 'sub': '500–600 kW', 'data': {'icon': 'bolt'}},
         {'at': r(S(12) + 1.5), 'kind': 'card', 'text': '特斯拉', 'sub': '500–600 kW', 'data': {'icon': 'bolt'}},
+        {'at': r(S(12) + 3.2), 'kind': 'number', 'text': '华为 · 理想 · 特斯拉', 'data': {'value': 600, 'suffix': ' kW', 'label': '最高到'}},
     ]
 def eq(cur):     # 短板公式：第 cur 项（车桩站网人）高亮成黄色，-1 = 全白
     T = [{'s': '补能速度', 'zh': True}, {'s': '=', 'gap': 20}, {'s': 'min(', 'gap': 4}]
@@ -61,7 +62,7 @@ def seg3(t0):   # F 3b1b：纸面 ≠ 实际，短板效应 = min(...)
 def seg4(t0):   # B Kurzgesagt：五个环节，一问一个节点（问题本身在字幕里）
     r = lambda t: round(t - t0, 3)
     names = ['车', '桩', '站', '网', '人']
-    return {'center': '高峰补能', 'flow': True, 'place': [[-600, 20], [-380, -220], [0, -330], [380, -220], [600, 20]]}, [{'at': r(S(18) - 0.25), 'kind': 'title', 'text': '五个环节，都可能是短板'}] + \
+    return {'center': '高峰补能', 'flow': True, 'place': [[-600, 20], [-380, -220], [0, -330], [380, -220], [600, 20]], 'hlZoom': 1.2, 'hlPull': 0.6}, [{'at': r(S(18) - 0.25), 'kind': 'title', 'text': '五个环节，都可能是短板'}] + \
         [{'at': r(S(18) + 0.05 + k * 0.12), 'kind': 'point', 'text': n} for k, n in enumerate(names)] + \
         [{'at': r(S(18 + k) + (1.3 if k == 0 else 0.25)), 'kind': 'highlight', 'data': {'index': k}} for k in range(5)]
 def seg5(t0):   # H 经济学人图：国庆峰值 1.8 倍
@@ -72,7 +73,7 @@ def seg5(t0):   # H 经济学人图：国庆峰值 1.8 倍
         {'at': r(S(23) + 1.2), 'kind': 'bar', 'data': {'index': 0}},
         {'at': r(S(24) + 2.6), 'kind': 'number', 'text': '国庆峰值新能源车', 'data': {'value': 1780, 'suffix': ' 万辆'}},
         {'at': r(S(25) + 0.05), 'kind': 'bar', 'data': {'index': 1}},
-        {'at': r(S(25) + 1.3), 'kind': 'highlight', 'data': {'index': 1}, 'text': '是日常的'},
+        {'at': r(S(25) + 0.55), 'kind': 'highlight', 'data': {'index': 1}, 'text': '是日常的'},
     ]
 def seg6(t0):   # D 豆子角色：新车也施展不出来，一辆一辆来
     r = lambda t: round(t - t0, 3)
@@ -108,7 +109,8 @@ def seg8(t0):   # E 动态大字：收尾
 SEGS = [(1, 0, 'y5_kinetic_type', seg1), (2, 5, 't2_keynote_ui', seg2), (3, 13, 't1_3b1b', seg3), (4, 18, 'y1_kurzgesagt', seg4),
         (5, 23, 't3_finance_chart', seg5), (6, 26, 'y4_storytime', seg6), (7, 30, 't2_keynote_ui', seg7), (8, 36, 'y5_kinetic_type', seg8)]
 def bounds():
-    starts = [0.0] + [round(S(f) - 0.35, 3) for _, f, _, _ in SEGS[1:]]
+    LEAD = {26: 0.1}                                             # 第 6 段晚切：让图表的「1.8 倍」标注多停 1s 多
+    starts = [0.0] + [round(S(f) - LEAD.get(f, 0.35), 3) for _, f, _, _ in SEGS[1:]]
     return [(starts[k], starts[k + 1] if k + 1 < len(starts) else TOTAL) for k in range(len(SEGS))]
 
 def write_specs():

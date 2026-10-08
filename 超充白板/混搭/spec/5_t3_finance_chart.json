@@ -1,6 +1,6 @@
 {
  "grammar": "t3_finance_chart",
- "duration": 8.329,
+ "duration": 8.579,
  "fps": 30,
  "width": 1920,
  "height": 1080,
@@ -58,7 +58,7 @@
    }
   },
   {
-   "at": 7.959,
+   "at": 7.209,
    "kind": "highlight",
    "data": {
     "index": 1

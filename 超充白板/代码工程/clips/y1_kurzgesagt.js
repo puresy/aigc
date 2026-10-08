@@ -47,8 +47,8 @@ return {
       const t0 = L.start, keys = [{ t: t0, x: W / 2, y: H / 2, z: 1 }];
       for (const h of L.hls) {
         const nd = h.data && h.data.index != null ? L.nodes[h.data.index] : L.nodes.filter(z => z.q.at <= h.at).pop(); if (!nd) continue;
-        const last = keys[keys.length - 1], z0 = last.z * (1 + 0.02 * Math.max(0, h.at - last.t)), Z = (1 + 0.02 * (h.at - t0)) * (ctx.portrait ? 1.35 : 1.45);   // 推近倍数按本层起点算，连续两次 highlight 不叠乘
-        const tx = lerp(nd.x, cx, 0.35), ty = lerp(nd.y, cy, 0.35);
+        const last = keys[keys.length - 1], z0 = last.z * (1 + 0.02 * Math.max(0, h.at - last.t)), Z = (1 + 0.02 * (h.at - t0)) * (ctx.data.hlZoom || (ctx.portrait ? 1.35 : 1.45));   // hlZoom / hlPull（本片加的）：推近浅一点、目标更靠中心，中心星球不沉进字幕带   // 推近倍数按本层起点算，连续两次 highlight 不叠乘
+        const pull = ctx.data.hlPull ?? 0.35, tx = lerp(nd.x, cx, pull), ty = lerp(nd.y, cy, pull);
         keys.push({ t: h.at, x: last.x, y: last.y, z: last.z > 1.2 ? last.z : z0, ease: MO.linear }); keys.push({ t: h.at + 1.2, x: tx, y: ty, z: Z, ease: MO.sineInOut }); h.node = nd;
       }
       const last = keys[keys.length - 1], tEnd = L.exit ? L.exit.at : ctx.dur; keys.push({ t: Math.max(last.t + 0.01, tEnd), x: last.x, y: last.y, z: last.z * (1 + 0.02 * Math.max(0, tEnd - last.t)), ease: MO.linear });
